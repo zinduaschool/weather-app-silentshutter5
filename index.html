@@ -1,0 +1,72 @@
+<html>
+
+<head>
+
+  <title>Weather App</title>
+
+  <style>
+
+    body {
+
+      font-family: Arial, sans-serif;
+
+    }
+
+    #loading {
+
+      display: none;
+
+      font-size: 24px;
+
+      font-weight: bold;
+
+      color: #666;
+
+    }
+
+    #weather-data {
+
+      display: none;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1>Weather App</h1>
+
+  <form>
+
+    <label for="location">Enter a city or zip code:</label>
+
+    <input type="text" id="location" name="location">
+
+    <button type="submit">Get Weather</button>
+
+  </form>
+
+  <div id="loading">Loading...</div>
+
+  <div id="weather-data">
+
+    <h2 id="location-name"></h2>
+
+    <p id="temperature"></p>
+
+    <p id="conditions"></p>
+
+    <p id="other-data"></p>
+
+    <button id="unit-toggle">Toggle Units (°C/°F)</button>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
